@@ -12,7 +12,6 @@ try {
     exit();
 }
 
-// Fetch products
 $produits = [];
 try {
     $sql = "SELECT * FROM produits";
@@ -23,7 +22,6 @@ try {
     $produits = [];
 }
 
-// Check if a product is being modified
 $modifierProduit = null;
 if (isset($_GET['modifier'])) {
     $id = $_GET['modifier'];
